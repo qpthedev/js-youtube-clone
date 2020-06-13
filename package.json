@@ -1,0 +1,10 @@
+{
+  "name": "js-youtube-clone",
+  "version": "1.0.0",
+  "description": "YouTube clone using Vanilla and NodeJS",
+  "main": "index.js",
+  "author": "qpthedev",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
