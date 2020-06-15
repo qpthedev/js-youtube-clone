@@ -2,7 +2,7 @@
   "name": "js-youtube-clone",
   "version": "1.0.0",
   "description": "YouTube clone using Vanilla and NodeJS",
-  "main": "index.js",
+  "main": "init.js",
   "author": "qpthedev",
   "dependencies": {
     "@babel/core": "^7.10.2",
