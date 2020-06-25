@@ -16,7 +16,7 @@ const VIDEOS = "/videos";
 const UPLOAD = "/upload";
 const VIDEO_DETAIL = "/:id";
 const EDIT_VIDEO = "/:id/edit";
-const DELTE_VIDEO = "/:id/delete";
+const DELETE_VIDEO = "/:id/delete";
 
 const routes = {
   home: HOME,
@@ -32,7 +32,7 @@ const routes = {
   upload: UPLOAD,
   videoDetail: VIDEO_DETAIL,
   editVideo: EDIT_VIDEO,
-  deleteVideo: DELTE_VIDEO,
+  deleteVideo: DELETE_VIDEO,
 };
 
 export default routes;
