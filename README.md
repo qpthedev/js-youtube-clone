@@ -2,11 +2,11 @@
 
 YouTube clone using Vanilla and NodeJS
 
-## List of Pages:
+## List of Pages
 
 - [ ] Home
-- [ ] Join
-- [ ] Login
+- [x] Join
+- [x] Login
 - [x] Search
 - [ ] User Detail
 - [ ] Edit Profile
