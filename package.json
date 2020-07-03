@@ -1,0 +1,33 @@
+{
+  "name": "js-youtube-clone",
+  "version": "1.0.0",
+  "description": "YouTube clone using Vanilla and NodeJS",
+  "main": "init.js",
+  "author": "qpthedev",
+  "dependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.23.0",
+    "mongoose": "^5.9.20",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "pug": "^3.0.0"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node init.js --delay 2"
+  },
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
+  }
+}
