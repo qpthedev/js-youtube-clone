@@ -8,9 +8,17 @@ const OUTPUT_DIR = path.join(__dirname, "static");
 
 const config = {
   mode: MODE,
-  entry: ENTRY_FILE,
+  entry: ["@babel/polyfill", ENTRY_FILE],
   module: {
     rules: [
+      {
+        test: /\.(js)$/,
+        use: [
+          {
+            loader: "babel-loader",
+          },
+        ],
+      },
       {
         test: /\.(scss)$/,
         use: ExtractCSS.extract([
@@ -20,8 +28,8 @@ const config = {
           {
             loader: "postcss-loader",
             options: {
-              plugin() {
-                return [autoprefixer({ browser: "cover 99.5%" })];
+              plugins() {
+                return [autoprefixer({ browsers: "cover 99.5%" })];
               },
             },
           },
