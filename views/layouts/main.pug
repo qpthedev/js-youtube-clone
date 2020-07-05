@@ -4,6 +4,7 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         script(src="https://kit.fontawesome.com/12f5d4d097.js", crossorigin="anonymous")
+        link(rel="stylesheet", href="/static/styles.css")
         title #{pageTitle} | #{siteName}
     body
         include ../partials/header
@@ -11,3 +12,4 @@ html(lang="en")
             block content
         
         include ../partials/footer
+        script(src="/static/main.js")
