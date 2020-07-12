@@ -1,22 +1,27 @@
-//Global routes
+// Global routes
 const HOME = "/";
 const JOIN = "/join";
 const LOGIN = "/login";
 const LOGOUT = "/logout";
 const SEARCH = "/search";
 
-//Users routes
+// Users routes
 const USERS = "/users";
 const USER_DETAIL = "/:id";
 const EDIT_PROFILE = "/edit-profile";
 const CHANGE_PASSWORD = "/change-password";
+const ME = "/me";
 
-//Videos routes
+// Videos routes
 const VIDEOS = "/videos";
 const UPLOAD = "/upload";
 const VIDEO_DETAIL = "/:id";
 const EDIT_VIDEO = "/:id/edit";
 const DELETE_VIDEO = "/:id/delete";
+
+// Github routes
+const GITHUB = "/auth/github";
+const GITHUB_CALLBACK = "/auth/github/callback";
 
 const routes = {
   home: HOME,
@@ -34,6 +39,7 @@ const routes = {
   },
   editProfile: EDIT_PROFILE,
   changePassword: CHANGE_PASSWORD,
+  me: ME,
   videos: VIDEOS,
   upload: UPLOAD,
   videoDetail: (id) => {
@@ -57,6 +63,9 @@ const routes = {
       return DELETE_VIDEO;
     }
   },
+
+  gitHub: GITHUB,
+  githubCallback: GITHUB_CALLBACK,
 };
 
 export default routes;
