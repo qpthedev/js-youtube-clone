@@ -23,13 +23,11 @@ block content
             if video.comments.length === 1
                 span.video__comment-number
                     span#jsCommentNumber 1
-                    span
-                    |  Comment
+                    |  comment
             else
                 span.video__comment-number
                     span#jsCommentNumber=video.comments.length
-                    span
-                    |  Comments
+                    |  comments
             form.add__comment#jsAddComment
                 input(type="text", placeholder="Add a comment")
             ul.video__comments-list#jsCommentList
