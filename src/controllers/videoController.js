@@ -149,6 +149,10 @@ export const postAddComment = async (req, res) => {
       text: comment,
       creator: user.id,
     });
+
+    // console.log(newComment);
+    // console.log(newComment.creator);
+
     video.comments.push(newComment.id);
     video.save();
   } catch (error) {
@@ -157,3 +161,22 @@ export const postAddComment = async (req, res) => {
     res.end();
   }
 };
+
+// export const postDeleteComment = async (req, res) => {
+//   const {
+//     params: { id },
+//     body: { deleteComment },
+//   } = req;
+
+//   try {
+//     const video = await Video.findById(id);
+//     const delComment = await Comment.findOneAndRemove({
+//       text: deleteComment,
+//     });
+//     res.status(200);
+//   } catch (error) {
+//     res.status(400);
+//   } finally {
+//     res.end();
+//   }
+// };
