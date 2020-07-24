@@ -14,5 +14,5 @@ YouTube clone using Vanilla and NodeJS
 - [x] Upload
 - [x] Video Detail
 - [x] Edit Video
-- [ ] AWS Implementation
-- [ ] Heroku Deployment
+- [x] AWS Implementation
+- [x] Heroku Deployment
