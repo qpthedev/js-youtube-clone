@@ -48,7 +48,7 @@
     "copyAll": "shx cp -R src/static build && shx cp -R src/views build",
     "build": "npm run build:server && npm run build:assets && npm run copyAll",
     "prebuild": "shx rm -rf build",
-    "start": "npm run build && node build/init.js",
+    "start": "node build/init.js",
     "tunnel": "lt -h http://serverless.social -p 5000",
     "prestart": "npm run build"
   },
